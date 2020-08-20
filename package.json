@@ -1,0 +1,28 @@
+{
+  "name": "node_crud",
+  "version": "1.0.0",
+  "description": "Node crud and other concepts recap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabJhai/Node-Js-Initial.git"
+  },
+  "keywords": [
+    "CRUD"
+  ],
+  "author": "Kabila Haile Soboka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabJhai/Node-Js-Initial/issues"
+  },
+  "homepage": "https://github.com/kabJhai/Node-Js-Initial#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.3.4"
+  }
+}
