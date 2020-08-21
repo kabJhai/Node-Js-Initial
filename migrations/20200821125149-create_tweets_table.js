@@ -11,6 +11,7 @@ module.exports = {
               primaryKey:true,
           },
           content: Sequelize.STRING(300),
+          userId: Sequelize.INTEGER(11),
           cretedAt:Sequelize.DATE,
           updatedAt: Sequelize.DATE,
       })
