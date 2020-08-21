@@ -9,4 +9,5 @@ module.exports = sequelize.define("Tweets",{
         primaryKey:true,
     },
     content: Sequelize.STRING(300),
+    userId: Sequelize.INTEGER(11),
 });
