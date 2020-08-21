@@ -39,3 +39,26 @@ Save it for development server only
 ```JavaScript
 npm install module-name --save-dev
 ```
+
+## Sequelize 
+
+### Initialize sequelize
+To initialize sequelize
+```sequelize init```
+### Create models for your database
+```JavaScript
+module.exports = sequelize.define("Tweets",{
+    id: {
+        type: Sequelize.INTEGER(11),
+        allowNull:false,
+        autoIncrement:true,
+        primaryKey:true,
+    },
+    content: Sequelize.STRING(300),
+});
+```
+
+### Then create migrations
+
+```sequelize migration:create --name your_migration_name```
+
