@@ -6,6 +6,8 @@ const body_parser = require('body-parser');const e = require('express');
 
 //Path
 const path = require('path');
+//DATABASE CONNECTION
+require("./src/database/connection");
 
 //JSON Parser
 app.use(
