@@ -60,5 +60,12 @@ module.exports = sequelize.define("Tweets",{
 
 ### Then create migrations
 
-```sequelize migration:create --name your_migration_name```
+```
+sequelize migration:create --name your_migration_name
+```
 
+### Then migrate
+
+```
+sequelize db:migrate
+```
