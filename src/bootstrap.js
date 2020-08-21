@@ -1,6 +1,6 @@
 module.exports = async()=>{
-    const Tweet =  require("./src/models/Tweet");
-    const User =  require("./src/models/User");
+    const Tweet =  require("./models/Tweet");
+    const User =  require("./models/User");
 
     //Association
     User.hasMany(Tweet,{as : "Tweets",foreignKey:'userId'});
@@ -10,14 +10,16 @@ module.exports = async()=>{
     }
 
     //Create
+    // console.log("Creating");
     const user = await User.create({
         username:"kabila",
-        passwd:'123456'
+        passwd:'123456',
     }).catch(errHandler);
+    // console.log("Created");
 
     const tweet = await Tweet.create({
         content:"This is the tweet content",
-        userId:user.id
+        userId:23123
     }).catch(errHandler);
 
     const users = await User.findAll({where : {username : "kabila"},include:[{

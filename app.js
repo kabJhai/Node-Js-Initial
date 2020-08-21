@@ -8,7 +8,7 @@ const body_parser = require('body-parser');const e = require('express');
 const path = require('path');
 //DATABASE CONNECTION
 require("./src/database/connection");
-
+require("./src/bootstrap")();
 //JSON Parser
 app.use(
     body_parser.urlencoded({
